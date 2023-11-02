@@ -1,3 +1,6 @@
+# [Python] Show numerically that ∑(n≥1)(−1)(n+1)/n = ln 2.Change the order of summation in this series – for example
+# by first adding p positive terms, then q negative terms, and so on – and show numerically that the
+# rearrangement gives a different sum (depending on p, q)
 import math
 import matplotlib.pyplot as plt
 
