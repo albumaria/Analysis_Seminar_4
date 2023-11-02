@@ -62,6 +62,7 @@ def main():
     plt.figure(figsize=(8, 6))
     plt.plot(n_values, errors_1, color='#fc72b7', marker='p', linestyle='-')
     plt.xlabel('n', color='#fc72b7')
+    plt.title("the partial sums were formed by adding each term as it is", color='#fc72b7')
     plt.ylabel('error compared to ln2', color='#fc72b7')
     plt.scatter(200000, 0, color='#29b8ff', marker='*')  # the error is 0 for ln2
     plt.grid(True)
@@ -90,7 +91,8 @@ def main():
 
     plt.figure(figsize=(8, 6))
     plt.plot(n_values, errors_2, color='#fc72b7', marker='p', linestyle='-')
-    plt.xlabel('n', color='#fc72b7')
+    plt.xlabel(f'n, for p = {p} and q = {q}', color='#fc72b7')
+    plt.title("the partial sums were formed by p additions and q subtractions each step", color='#fc72b7')
     plt.ylabel('error compared to ln2', color='#fc72b7')
     plt.scatter(200000, 0, color='#29b8ff', marker='*')  # the error is 0 for ln2
     plt.grid(True)
@@ -100,5 +102,6 @@ def main():
         print("The partial sum for n =", n_values[i], " is:", partial_sum_values_2[i])
 
     print("Exact value of ln(2): ", ln2, "\n")
+
 
 main()
